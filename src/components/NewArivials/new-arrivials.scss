@@ -1,0 +1,62 @@
+@import "../../assets/sass/common/import";
+.new-arrivials-section {
+  margin-top: 18px;
+  position: relative;
+  h2 {
+    font-family: $Pacifico;
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+  }
+  .more-info {
+    margin-top: 18px;
+  }
+  .products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    img {
+      // height: 225px;
+    }
+  }
+  .product-item {
+    @include breakpoint(mobile) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .detail {
+    font-size: 12px;
+  }
+  .price {
+    font-family: $Pacifico;
+    font-size: 16px;
+    color: $green;
+  }
+  .arrow-left {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    outline: none;
+  }
+  .arrow-right {
+    @extend .arrow-left;
+    right: 15px;
+    left: auto;
+  }
+}

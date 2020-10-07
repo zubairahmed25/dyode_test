@@ -1,0 +1,42 @@
+@import "../../assets/sass/common/import";
+
+.banner-section {
+  position: relative;
+  margin-top: 18px;
+  .banner {
+  }
+  .banner-detail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16;
+    color: $white;
+    left: 70%;
+    @include breakpoint(mobile) {
+      left: 60%;
+    }
+  }
+
+    
+.banner-img {
+  width: 100%;
+}
+
+  .title {
+    font-family: $Pacifico;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .detail {
+    margin: 0 0 20px;
+  }
+  .shop-btn {
+    background: $green;
+    padding: 7px 20px;
+    border: none;
+    font-size: 8px;
+    font-weight: bold;
+    color: $white;
+  }
+}

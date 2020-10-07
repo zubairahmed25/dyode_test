@@ -1,0 +1,36 @@
+@import "../../assets/sass/common/import";
+.instagram-follow-section {
+  margin-top: 18px;
+  position: relative;
+  h2 {
+    font-family: $Pacifico;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .more-info {
+    margin-top: 18px;
+  }
+  .followers {
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    img {
+      // height: 108px;
+    }
+  }
+  .item {
+    margin: 0 5px;
+    @include breakpoint(mobile) {
+      &:nth-child(4),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}

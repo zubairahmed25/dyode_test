@@ -1,0 +1,55 @@
+@import "../../assets/sass/common/import";
+.product-categories-section {
+  margin-top: 18px;
+  .product-catogories {
+    list-style: none;
+    margin: 0 -8px;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    @include breakpoint(mobile) {
+      flex-flow: row wrap;
+      margin: 0 -2%;
+    }
+  }
+  .product-item {
+    margin: 0 8px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    @include breakpoint(mobile) {
+      width: 46%;
+      margin: {
+        left: 2%;
+        right: 2%;
+      }
+    }
+    &:last-child {
+      @include breakpoint(mobile) {
+        width: 100%;
+        // margin: {
+        //   left: 0;
+        //   right: 0;
+        // }
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .product-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $green;
+    font-size: 19px;
+    font-family: $Pacifico;
+    height: 42px;
+    color: $white;
+    border: none;
+  }
+}

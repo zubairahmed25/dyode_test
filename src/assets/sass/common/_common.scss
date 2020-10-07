@@ -1,0 +1,36 @@
+@import "../../../assets/sass/common/import";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $Lato;
+  font-weight: 300;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+button {
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 60px;
+  @include breakpoint(mobile) {
+    padding: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}

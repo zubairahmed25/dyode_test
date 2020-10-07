@@ -1,0 +1,38 @@
+@mixin breakpoint($point) {
+  @if $point == largeScreen {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $point == tabletPortrait {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == mobilePortrait {
+    @media (max-width: 479px) {
+      @content;
+    }
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

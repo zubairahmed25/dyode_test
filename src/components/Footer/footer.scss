@@ -1,0 +1,56 @@
+@import "../../assets/sass/common/import";
+.footer-section {
+  margin-top: 18px;
+  position: relative;
+  background: $black;
+  color: $white;
+  padding: 25px 0;
+  // text-align: center;
+  @include breakpoint(mobile) {
+    padding: 25px 30px;
+  }
+  .container {
+    display: flex;
+    @include breakpoint(mobile) {
+      flex-flow: column;
+    }
+  }
+  h3 {
+    font-family: $Pacifico;
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .service {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .links {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  .collapsed {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .space {
+    flex: 1;
+  }
+  .social-links {
+    .links {
+      display: flex;
+      align-items: center;
+    }
+    .link-li {
+      margin-right: 10px;
+    }
+  }
+}

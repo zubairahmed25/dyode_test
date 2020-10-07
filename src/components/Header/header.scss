@@ -1,0 +1,57 @@
+@import "../../assets/sass/common/import";
+
+.header-section {
+  .announcement-bar {
+    background: $black;
+    color: $white;
+    text-align: center;
+    padding: 4px;
+    font-size: 12px;
+  }
+  .menu {
+    display: none;
+    @include breakpoint(mobile) {
+      display: block;
+    }
+  }
+  .menu-img {
+    cursor: pointer;
+  }
+  .header {
+    background: $green;
+    color: $white;
+    padding: 5px;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include breakpoint(mobile) {
+        justify-content: space-between;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .link {
+    margin-left: 20px;
+  }
+  .shopping {
+    display: none;
+    @include breakpoint(mobile) {
+      display: block;
+    }
+  }
+}
